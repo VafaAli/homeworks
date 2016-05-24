@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!-- <div style="width:0;height:0;border-left:25px solid green; border-top:25px solid transparent;border-bottom:25px solid transparent"></div>
+<div style="width:0;height:0;border-bottom:25px solid green; border-left:25px solid transparent;border-right:25px solid transparent"></div>
+
+<div style="width:0;height:0;border-right:25px solid green; border-top:25px solid transparent;border-bottom:25px solid transparent"></div>
+<div style="width:0;height:0;border-top:25px solid green; border-left:25px solid transparent;border-right:25px solid transparent"></div>
+</body> -->
+
+<script type="text/javascript">
+	function heyTriangle(a){
+		if(a=="top"){
+			document.write("<div style='width:0;height:0;border-bottom:25px solid green; border-left:25px solid transparent;border-right:25px solid transparent'></div>")
+		}
+		else if (a=="bottom") {
+			document.write("<div style='width:0;height:0;border-top:25px solid green; border-left:25px solid transparent;border-right:25px solid transparent'></div>")
+		}
+		else if (a=="right") {
+			document.write("<div style='width:0;height:0;border-left:25px solid green; border-top:25px solid transparent;border-bottom:25px solid transparent'></div>")
+		}
+		else if (a=="left") {
+			document.write("<div style='width:0;height:0;border-right:25px solid green; border-top:25px solid transparent;border-bottom:25px solid transparent'></div>")
+		}
+	};
+	heyTriangle("left")
+
+</script>
+</html>

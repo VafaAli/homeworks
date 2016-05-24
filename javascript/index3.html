@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+
+
+            var divYazdir = function (w,x,z) {
+                document.write('<div style="width:' + w + 'px;background:green;display:inline-block;float:left;">');
+                for (var i = 0; i < x; i++) {
+                    document.write('<div style="width:' + (w - 10 * z) / z + 'px; margin:5px; display:inline-block; height:150px; background:red"></div>');
+                }
+                document.write('</div>');
+            };
+            
+            divYazdir(400,4,2);
+            
+
+</script>
+
+</body>
+</html>

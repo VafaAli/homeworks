@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	function FitTest(ad, soyad, cheki, boy){
+		this.name=ad,
+		this.surname=soyad,
+		this.cheki=cheki,
+		this.boy=boy,
+		this.hesabla=function(){
+			
+
+			if ((this.cheki / (this.boy * this.boy))>25) {
+				document.write(this.name + " "+"yeme") 
+			}
+			else {
+				document.write("ye" +" " + this.name + " doyunca ye ") 
+			}
+
+		}
+    }
+    var vefa=new FitTest("vefa","alizade", 56, 1.78);
+    console.log(vefa.hesabla());
+
+    // math.pow
+
+    
+</script>
+
+</body>
+</html>

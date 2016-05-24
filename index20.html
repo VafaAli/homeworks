@@ -1,0 +1,130 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	ul{
+		display: inline-block;
+	}
+		ul li{
+			 list-style-type:none;
+			 color:red;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	// var insanlar={
+	// 	azerbaycan:[
+	// 	{
+	// 		milliyyet:"azerbaycan",
+	// 		vetendashlig:"Azerbaycanli"
+	// 	},
+	// 	{
+	// 		kishi:"bir dene",
+	// 		azadliq:"full"
+	// 	}
+	// 	],
+	// 	amerika:[
+	// 	{
+	// 		milliyyet:"hindu",
+	// 		vetendashlig:"vetensizler"
+	// 	},
+	// 	{
+	// 		kishi:"malcolm",
+	// 		azadliq:"gibi gibi"
+	// 	}
+	// 	]
+	// };
+	// document.write(insanlar.amerika[0].vetendashlig)
+// function computer(cpu,hard_disc,ram, os, display_size){
+// 	this.cpu=cpu;
+// 	this.hard_disc=hard_disc;
+// 	this.ram=ram;
+// 	this.os=os;
+// 	this.display_size=display_size;
+// 	this.getCpu=function(){
+// 			return this.cpu
+// 	};
+// 	this.getHard_disc=function(){
+// 			return this.hard_disc
+// 	};
+// 	this.getOs=function(){
+// 			return this.os
+// 	};
+// 	this.getdisplay_size=function(){
+// 			return this.display_size
+// 	};
+// 	this.getRam=function(){
+// 			return this.ram
+// 	};
+// 	// this.displaySpec=function(){
+// 	// 	return(this.getCpu()+"<br>"+this.getRam())
+// 	// }
+	
+// }
+// var myComp=new computer("2.2GHZ", "500gb","8gb","windows","14inch")
+// document.write("<ul>");
+// document.write("<li>"+"Hard Disc:"+" " +myComp.getHard_disc()+"</li>");
+// document.write("<li>"+"CPU:"+" "+myComp.getCpu()+"</li>");
+// document.write("<li>"+"OS:"+" "+myComp.getOs()+"</li>");
+// document.write("<li>"+"RAM:"+" "+myComp.getRam()+"</li>");
+// document.write("<li>"+"Display Size:"+" "+myComp.getdisplay_size()+"</li>");
+// document.write("</ul>")
+
+function computer(cpu,hard_disc,ram, os, display_size){
+	this.cpu=cpu;
+	this.hard_disc=hard_disc;
+	this.ram=ram;
+	this.os=os;
+	this.display_size=display_size;
+	this.getCpu=function(){
+			return this.cpu
+	};
+	this.getHard_disc=function(){
+			return this.hard_disc
+	};
+	this.getOs=function(){
+			return this.os
+	};
+	this.getdisplay_size=function(){
+			return this.display_size
+	};
+	this.getRam=function(){
+			return this.ram
+	};
+	this.getList=function(){
+		document.write("<ul>");
+        document.write("<li>"+"Hard Disc:"+" " +this.getHard_disc()+"</li>");
+        document.write("<li>"+"CPU:"+" "+this.getCpu()+"</li>");
+        document.write("<li>"+"OS:"+" "+this.getOs()+"</li>");
+        document.write("<li>"+"RAM:"+" "+this.getRam()+"</li>");
+        document.write("<li>"+"Display Size:"+" "+this.getdisplay_size()+"</li>");
+        document.write("</ul>")
+	};
+	this.setCpu=function(cpu){
+		this.cpu=cpu;
+	}
+};
+var myComp=new computer("2.2GHZ", "500gb","8gb","windows","14inch");
+myComp.getList()
+
+
+var Comp2=new computer("1.5","300GHZ","8gb","windows","14inch");
+Comp2.getList();
+Comp2.setCpu(7);
+Comp2.getList();
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+.container{
+	width: 90%;
+	height: auto;
+	margin:0px auto;
+	margin-top: 180px;
+	
+
+
+}
+.content{
+	width: 24.5%;
+	height: 450px;
+	margin:0px auto;
+	
+	display: inline-block;
+}
+div img{
+	width: 90%;
+	height: 100%;
+	float: left;
+}
+div{
+	position: relative;
+}
+h3, h4{
+	position: absolute;
+	left: 3px;
+	color:#66b3ff;
+	background-color: white;
+	font-family: Verdana;
+}
+h3{
+	top:300px;
+	line-height: 35px;
+}
+h4{
+	
+	top:350px;
+	line-height: 30px;
+	}
+
+
+
+.sociallist{
+	position: absolute;
+	right: 0px;
+    bottom: 0px;
+    display: none;
+}
+.sociallist li{
+	list-style: none;
+	margin: 5px;
+
+}
+.sociallist li i{
+	font-size: 25px;
+	background-color: white;
+	color:#66b3ff;
+}
+
+
+

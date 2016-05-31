@@ -1,0 +1,168 @@
+<!DOCTYPE >
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="project.css">
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="container">
+	<div class="content" id="div1" class="div"onmouseover="moveImg1(this)" onmouseout="normalImg1(this)">
+		<img src="img1.jpg" id="img1" >
+		<h3 id="txt1">Mr Always Angry</h3>
+		<h4 id="txt2">Meet Pixar Heroes</h4>
+		<ul class="sociallist">
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+		</ul>
+
+		
+	</div>
+	<div class="content" id="div2" class="div" onmouseover="moveImg2(this)" onmouseout="normalImg2(this)">
+		<img src="img2.jpg" id="img2">
+		<h3 id="txt3">Mrs Disgusting</h3>
+		<h4 id="txt4">Meet Pixar Heroes</h4>
+		<ul class="sociallist">
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+		</ul>
+	</div>
+	<div class="content" id="div3" class="div" onmouseover="moveImg3(this)" onmouseout="normalImg3(this)">
+		<img src="img3.jpg" id="img3">
+		<h3 id="txt5">Sir very Sad</h3>
+		<h4 id="txt6">Meet Pixar Heroes</h4>
+		<ul class="sociallist">
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+		</ul>
+
+	</div>
+	<div class="content" id="div4" class="div" onmouseover="moveImg4(this)" onmouseout="normalImg4(this)">
+		<img src="img4.jpg" id="img4">
+		<h3 id="txt7">Lady Happy</h3>
+		<h4 id="txt8">Meet Pixar Heroes</h4>
+		<ul class="sociallist">
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+			<li><i class="fa fa-facebook-official" aria-hidden="true" onmouseover="changecolor(this)" onmouseout="backcolor(this)"></i></li>
+		</ul>
+
+	</div>
+
+</div>
+<script>
+
+
+var sociallist1 =  document.getElementsByClassName("sociallist")[0];
+var sociallist2 =  document.getElementsByClassName("sociallist")[1];
+var sociallist3 =  document.getElementsByClassName("sociallist")[2];
+var sociallist4 =  document.getElementsByClassName("sociallist")[3];
+
+
+function moveImg1(x) {
+    document.getElementById("img1").style.width = "100%";
+    document.getElementById("txt1").style.color = "white";
+    document.getElementById("txt1").style.backgroundColor = "#66b3ff";
+    document.getElementById("txt2").style.color = "white";
+    document.getElementById("txt2").style.backgroundColor = "#66b3ff";
+   	sociallist1.style.display = "block";
+}
+
+function normalImg1(x) {
+    document.getElementById("img1").style.width = "90%";
+    document.getElementById("txt1").style.color = "#66b3ff";
+    document.getElementById("txt1").style.backgroundColor = "white";
+    document.getElementById("txt2").style.color = "#66b3ff";
+    document.getElementById("txt2").style.backgroundColor = "white";
+    sociallist1.style.display = "none";
+}
+function moveImg2(x) {
+     document.getElementById("img2").style.width = "100%";
+    document.getElementById("txt3").style.color = "white";
+    document.getElementById("txt3").style.backgroundColor = "#66b3ff";
+    document.getElementById("txt4").style.color = "white";
+    document.getElementById("txt4").style.backgroundColor = "#66b3ff";
+    sociallist2.style.display = "block";
+
+}
+
+function normalImg2(x) {
+    document.getElementById("img2").style.width = "90%";
+    document.getElementById("txt3").style.color = "#66b3ff";
+    document.getElementById("txt3").style.backgroundColor = "white";
+    document.getElementById("txt4").style.color = "#66b3ff";
+    document.getElementById("txt4").style.backgroundColor = "white";
+    sociallist2.style.display = "none";
+}
+function moveImg3(x) {
+    document.getElementById("img3").style.width = "100%";
+    document.getElementById("txt5").style.color = "white";
+    document.getElementById("txt5").style.backgroundColor = "#66b3ff";
+    document.getElementById("txt6").style.color = "white";
+    document.getElementById("txt6").style.backgroundColor = "#66b3ff";
+    sociallist3.style.display = "block";
+
+}
+
+function normalImg3(x) {
+    document.getElementById("img3").style.width = "90%";
+    document.getElementById("txt5").style.color = "#66b3ff";
+    document.getElementById("txt5").style.backgroundColor = "white";
+    document.getElementById("txt6").style.color = "#66b3ff";
+    document.getElementById("txt6").style.backgroundColor = "white";
+    sociallist3.style.display = "none";
+}
+function moveImg4(x) {
+     document.getElementById("img4").style.width = "100%";
+    document.getElementById("txt7").style.color = "white";
+    document.getElementById("txt7").style.backgroundColor = "#66b3ff";
+    document.getElementById("txt8").style.color = "white";
+    document.getElementById("txt8").style.backgroundColor = "#66b3ff";
+    sociallist4.style.display = "block";
+
+}
+
+function normalImg4(x) {
+     document.getElementById("img4").style.width = "90%";
+    document.getElementById("txt7").style.color = "#66b3ff";
+    document.getElementById("txt7").style.backgroundColor = "white";
+    document.getElementById("txt8").style.color = "#66b3ff";
+    document.getElementById("txt8").style.backgroundColor = "white";
+    sociallist4.style.display = "none";
+}
+function changecolor(x){
+	x.style.color = "white";
+	x.style.backgroundColor = "#66b3ff";
+}
+function backcolor(x){
+	x.style.color = "#66b3ff";
+	x.style.backgroundColor = "white";
+}
+
+
+
+// var gallery = []
+
+// function createImage(img, src, title) {
+//   this.img = img;
+//   this.src = src;
+//   this.title = title
+//   return img; 
+// };
+// 	var img1 = new createImage("img1", "img1.jpg", "imageone");
+// 	document.body.appendChild(img1);
+
+
+</script>
+
+
+</body>
+</html>

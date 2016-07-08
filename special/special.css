@@ -1,0 +1,33 @@
+body{
+	background-color: #FFFFCC;
+}
+.main{
+	width: 564px;
+	height: 470px;
+	border:1px solid black;
+	background-image: url("img1.jpg");
+	background-repeat: no-repeat; 
+	margin: 0px auto;	
+	overflow: hidden;
+}
+.button{
+	width: 564px;
+	height: 25px;
+	margin: 0px auto;
+	padding-top: 15px;	
+}
+#btn{
+	float:right;
+	background-color: #73b45e;
+	color: white;
+	border-radius:10%;
+	height: 25px;
+	width: 80px;
+}
+.point{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: blue;
+	text-align: center;
+}

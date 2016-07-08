@@ -1,0 +1,42 @@
+/*#main{
+	margin:0px auto;
+	line-height: 50px;
+}
+	
+.emptyText{
+	width: 120px;
+	height: 150px;
+	margin:0px auto;
+
+}*/
+
+
+/*.upside{
+	width: 100px;
+	height: 100px;
+	display: block;
+	border:1px solid red;
+}
+.downside{
+	width: 100px;
+	height: 100px;
+	display: none;
+	border:1px solid red;
+}*/
+
+.sld{
+	width: 200px;
+	height: 100px;
+	background-color: blue;
+	border-radius: 5%;
+}
+.circle{
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: pink;
+	display: none;
+	position: absolute;
+	top:100px;
+	left:0px;
+}

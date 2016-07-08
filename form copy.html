@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+<form>
+<div class="disp">
+	<input type="text" placeholder="Your Name" id="name">
+	<p id="namealert"></p>
+</div>
+<div class="disp">
+	<input type="text" placeholder="Your Surname" id="surname">
+	<p id="surnamealert"></p>
+</div>
+<div class="disp">
+	<input type="text" placeholder="Mobile Number" id="number">
+	<p id="numberalert"></p>
+</div>
+<div class="disp">
+	<textarea cols="50" rows="8" placeholder="Type your message" id="message"></textarea>
+	<p id="messagealert"></p>
+</div>
+	<input type="button" value="Send" onclick="sending()">
+</form>
+
+<script>
+	function sending(){
+		var name = document.getElementById("name").value;
+		var surname = document.getElementById("surname").value;
+		var phonenumber = document.getElementById("number").value;
+		var message = document.getElementById("message").value;
+
+
+		if (name.length == 0) {
+        document.getElementById("namealert").innerHTML = "Name is required!"
+    }
+
+        else if (name.length > 20) {
+    	document.getElementById("namealert").innerHTML = "Maximum length is 20!"
+    	// return false;
+    }
+        else if (surname.length == 0) {
+        document.getElementById("surnamealert").innerHTML = "Surname is required!"
+    }
+
+        else if (surname.length > 20) {
+    	document.getElementById("surnamealert").innerHTML = "Maximum length is 20!"
+    	// return false;
+    }
+        var x = parseInt(phonenumber);
+        console.log(typeof x)
+        if (typeof x != "number") {
+        document.getElementById("numberalert").innerHTML = "Please add numbers!"
+    }
+        else if (phonenumber.length != 12) {
+   	    document.getElementById("numberalert").innerHTML = "Number Should be 12 digits!"
+   	}
+   	    
+   
+        else if (message.length == 0) {
+    	document.getElementById("messagealert").innerHTML = "This field is required!"
+    	else if (message.length > 500) {
+    	document.getElementById("messagealert").innerHTML = "This field is required!"
+    	
+    } 
+    else {
+    	document.getElementsByTagName("form")[0].reset();
+    }
+			
+
+
+
+
+}
+</script>
+
+</body>
+</html>

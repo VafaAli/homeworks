@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+	<style>
+		p{
+			display: inline-block;
+		}
+	</style>
+</head>
+<body> 
+<!-- <form name="myForm" onsubmit="return alertform()" method="post"> -->
+  <p>Name:</p>
+  <input type="text" name="firstname">
+  <p id="namealert"></p>
+  <br>
+  <p>Number:</p>
+  <input type="text" name="number">
+  <p id="numberalert"></p> 
+  <br>
+  <p>Message:</p><br>
+  <textarea rows="4" cols="40" name="message"></textarea>
+  <p id="messagealert"></p>
+  <input type="submit" value="Submit" onclick="alertform()">
+<!-- </form> -->
+
+
+
+<script>
+function alertform() {
+
+	document.getElementById("namealert").innerHTML = "";
+	document.getElementById("numberalert").innerHTML = "";
+	document.getElementById("messagealert").innerHTML = "";
+
+    var x = document.getElementsByName("firstname")[0].value;
+    if (x == null || x == "") {
+        document.getElementById("namealert").innerHTML = "Name is required!"
+        // return false;
+    }
+    else if (x.length > 20) {
+    	document.getElementById("namealert").innerHTML = "Maximum length is 20!"
+    	// return false;
+    }
+    var y = document.getElementsByName("number")[0].value;
+    console.log(typeof y);
+    if (typeof y != "number") {
+        document.getElementById("numberalert").innerHTML = "Please add numbers!"
+    }
+    else if (y.length != 12) {
+   	    document.getElementById("numberalert").innerHTML = "Number Should be 12 digits!"
+   	}
+   	    
+    var z = document.getElementsByName("message")[0].value;
+    if (z.length == "" || x == null) {
+    	document.getElementById("messagealert").innerHTML = "This field is required!"
+    	return false;
+    }
+    
+
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+body{
+	font-family: Helvetica !important;
+	}
+#about, #counter, #first, #services {
+	height: 700px !important;
+}
+#first{
+	background-image: url(img/banner-bg.jpg);
+	background-size: cover;
+}
+.cstm-navbar{
+	height: 80px;
+	position: absolute;
+	top: 35px;
+}
+
+.nav>li>a{
+	margin-right: 15px;
+	padding: 30px;
+}
+.navbar-header{
+	width: 350px;
+}
+#logo{
+	margin-left:100px;
+}
+#textpart{
+	display: block;
+	position: absolute;
+	top:150px;
+	left:100px;
+}
+#textpart h1{
+	font-family: Helvetica !important;
+	font-size:100px !important;
+	font-weight: bold;
+	color: #222222;
+	text-shadow: 6px 8px #D3D3D3;
+}
+ h1 span{
+	color: #FF6103;
+}
+#about h1{
+	color: #222222;
+	line-height: 30px;
+	margin:30px;
+	font-weight: bold;
+}
+#about h1 i{
+	color: #FF6103 !important;
+}
+#about .col-md-8, #about .col-md-4{
+	position: relative;
+	top: 100px;
+	left: 40px;
+}
+#about p{
+	line-height: 30px;
+	text-align: justify;
+	font-family: Verdana !important;
+	color: grey;
+	padding: 20px;
+}
+#about .row{
+	margin-top: 40px;
+}
+#readmore{
+	color: #FF6103 !important;
+	font-weight: bold;
+	font-size: 20px;
+}
+#counter{
+	background-image: url(img/facts-bg.jpg);
+	background-size: cover;
+	background-position: fixed;
+	margin-right: 70px !important;
+}
+#counter .row{
+	height: 700px !important;
+	background-color: black !important;
+	opacity:0.9 !important;
+}
+#counter .counterhead{
+	position: relative;
+	left: 70px;
+	top: 100px;
+}
+#counter .counterbody{
+	position: relative;
+	left: 70px;
+	top: 200px;
+}
+#counter .row .col-md-12 h1{
+	line-height: 50px;
+	font-family: Helvetica !important;
+	font-size:50px !important;
+	font-weight: bold;
+	color: white;
+}
+#counter p{
+	line-height: 30px;
+	text-align: justify;
+	font-family: Verdana !important;
+	color: white;
+}
+.counters{
+	display: inline-block !important;
+	margin-right: 100px;
+}
+.counters span{
+	width: auto;
+	padding:10px;
+	display: inline-block;
+	line-height: 50px;
+	height: 70px !important;
+	background-color: #FF6103;
+	color: white;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+#services i{
+	color: #FF6103 !important;
+	font-size: 35px;
+	margin-top: 50px;
+	text-align: center !important;
+}
+#services h1{
+	font-family: Helvetica;
+	font-size: 32px;
+	text-align: center;
+	font-weight: bold;
+	
+}
+#services h6{
+	font-family: Helvetica;
+	color: grey;
+	text-align: center;
+}
+#agent{
+	background-image: url(img/services-thumb.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
